@@ -1,0 +1,43 @@
+.banner-container{
+    height: 17rem;
+}
+#banner{
+    margin: auto;
+    width: 90%;
+    height: 14rem; 
+    background-position: center;
+    filter: brightness(60%);
+    border-radius: 25px;
+}
+.banner-title{
+    position: relative;
+    text-align: center;
+    bottom: 10rem;
+    font-size: 3rem;
+    font-weight: 500;
+    color: white;
+}
+.banner_1{
+    background-image: url('../../assets/images/banniere.png');
+    background-repeat: no-repeat;
+}
+.banner_2{
+    background-image: url('../../assets/images/banniere_2.png');
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:768px) {
+    .banner-title{
+        width: 100%;
+        font-size: 2rem;
+        margin-left: 0.8rem;
+        bottom: 8rem;
+        text-align: start;
+    }
+    .banner-container{
+        height: 10rem;
+    }
+    #banner{
+        height: 9rem;
+        width: 100%;
+    }
+}
