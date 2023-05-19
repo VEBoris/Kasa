@@ -1,0 +1,32 @@
+.App-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 2rem auto 2rem auto;
+  }
+  .kasa-logo{
+    max-width: 35vw;
+  }
+  .App-link {
+    color: #61dafb;
+  }
+  #nav-items{
+    display: flex;
+  }
+  a{
+    text-decoration: none;
+    color: #FF6060;
+  }
+  li{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  @media screen and (max-width:768px) {
+    li{
+      font-size: 1rem;
+    }
+  }
