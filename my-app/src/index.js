@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Accueil from './pages/Accueil';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,6 +12,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <Header/>
+      <Routes>
+        <Route exact path="/" element={<Accueil/>}/>
+      </Routes>
       <Footer/>
     </Router>
   </React.StrictMode>
