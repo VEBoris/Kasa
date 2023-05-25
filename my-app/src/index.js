@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Accueil from './pages/Accueil';
+import Logement from './pages/Logement'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
@@ -14,6 +15,7 @@ root.render(
       <Header/>
       <Routes>
         <Route exact path="/" element={<Accueil/>}/>
+        <Route path="/location/:id" element={<Logement/>}/>
       </Routes>
       <Footer/>
     </Router>
