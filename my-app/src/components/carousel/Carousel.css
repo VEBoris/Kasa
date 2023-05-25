@@ -1,0 +1,37 @@
+.carousel{
+    margin-top: 2rem;
+    margin: auto;
+    height: 415px;
+  }
+  .carousel img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+  .carousel-counter{
+    text-align: center;
+    color: white;
+    transform: translateY(-600%);
+  }
+  .carousel-controls{
+    transform: translateY(-350%);
+    margin: auto;
+    display: flex;
+    max-width: 95%;
+    justify-content: space-between;
+  }
+  .carousel-controls img{
+    max-width: 46px;
+  }
+  @media screen and (max-width: 768px) {
+    .carousel{
+      height: 255px;
+    }
+    .carousel-counter{
+      display: none;
+    }
+    .carousel-controls{
+      transform: translateY(-250%);
+    }
+  }
