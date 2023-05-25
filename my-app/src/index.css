@@ -1,13 +1,115 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  width: 100%;
+  font-family:'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.main{
+  max-width: 90%;
+  margin: auto;
+}
+.logement-title{
+  font-size: 1.5rem;
+}
+.infos{
+  display: flex;
+  justify-content: space-between;
+}
+h2{
+  max-width: 40%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.section-header, h2{
+  color: #FF6060;
+}
+.host-wrapper{
+  width: fit-content;
+  height: fit-content;
+}
+.host{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+}
+.host-name{
+  font-size: 1rem;
+  max-width: 5rem;
+}
+.host-picture{
+  object-fit: scale-down;
+  border-radius: 50%;
+  width: 40%;
+}
+.rating{
+  text-align: end;
+}
+.rating img{
+  width: 1.5rem;
+  margin: 0.3rem;
+}
+.content{
+  margin-bottom: 2rem;
+}
+.error{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FF6060;
+}
+.error h1{
+  font-family: 'Montserrat-bold';
+  width: fit-content;
+  margin: 0;
+  font-size: 16rem;
+  font-weight: 700;
+}
+.error h2{
+  font-size: 2rem;
+  max-width: 70%;
+  text-align: center;
+}
+.error p{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  text-decoration: underline;
+}
+@media screen and (max-width:768px) {
+  .error{
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+
+  }
+  .error h1{
+    font-size: 10vh;
+  }
+  .error h2{
+    font-size: 2vh;
+  }
+  .infos{
+    flex-direction: column;
+  }
+  .host{
+    margin-top: 0;
+  }
+  .host-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .host-picture{
+    width: 25%;
+  }
+  .rating img{
+    width: 0.8rem;  
+  }
 }
