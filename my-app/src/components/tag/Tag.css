@@ -1,0 +1,18 @@
+.tag-wrapper{
+    display: flex;
+}
+.tag{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    background-color: #FF6060;
+    color: white;
+    width: fit-content;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border-radius: 15px;
+}
+@media screen and (max-width:768px) {
+    .tag-wrapper{
+        flex-wrap: wrap;
+    }
+}

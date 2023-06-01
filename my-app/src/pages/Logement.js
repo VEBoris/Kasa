@@ -1,6 +1,8 @@
 import {useState, useEffect} from 'react'
 import {useNavigate, useParams} from 'react-router-dom'
-import Carousel from '../components/carousel/Carousel'
+import Carrousel from '../components/carrousel/Carrousel'
+import Tag from '../components/tag/Tag'
+import Dropdown from '../components/dropdown/Dropdown'
 import filledStar from '../assets/images/star-solid.svg'
 import emptyStar from '../assets/images/star-empty.svg'
 
@@ -45,12 +47,13 @@ function Logement(){
     return(
         <>{!isLoading && (
             <div className="main">
-                <Carousel pictures={data.pictures}/>
+                <Carrousel pictures={data.pictures}/>
                 <section className='infos'>
                     <article className='section-header'>
                         <h1 className='logement-title'>{data.title}</h1>
                         <p>{data.location}</p>
                         <div className='tag-wrapper'>
+                            {data.tags.map((tag) => <Tag tag={tag} key={tag} />)}
                         </div>
                     </article>
                     <div className='host-wrapper'>
@@ -65,6 +68,8 @@ function Logement(){
                 </section>
                 <section className='content'>
                     <div className='dropdown logement'>
+                        <Dropdown title='Description' content={data.description}/>
+                        <Dropdown title='Equipements' content={data.equipments}/>
                     </div>
                 </section>
             </div>
