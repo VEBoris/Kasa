@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Accueil from './pages/Accueil';
 import Logement from './pages/Logement'
+import APropos from './pages/Apropos';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Error from './pages/ErrorPage';
@@ -16,6 +17,7 @@ root.render(
       <Header/>
       <Routes>
         <Route exact path="/" element={<Accueil/>}/>
+        <Route path="/A_Propos" element={<APropos/>}/>
         <Route path="/location/:id" element={<Logement/>}/>
         <Route path="*" element={<Error/>}/>
       </Routes>
